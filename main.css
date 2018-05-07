@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
 body {
   margin: 0;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 14px; }
 
 main * {
@@ -20,37 +19,38 @@ main * {
   height: 35px;
   margin: 0 auto;
   text-align: center;
-  display: block; 
+  display: block;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); }
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
 .header__btn-back {
   color: #ccac5b;
   float: left;
   cursor: pointer;
-  padding-left: 5px;
-  margin: 12px 0 0 20px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  margin: 12px 0 0 0;
   letter-spacing: 9px; }
-  .header__btn-back:hover {  
-  transform: translateX(-5px); 
-  transition: all 0.4s; }
   .header__btn-back::before {
     content: ' ';
-    display: block;
     float: left;
-    margin: 5px 5px 0 10px;    
-    width: 10px;
+    display: block;
+    border-bottom: 1px solid #ccac5b;
+    width: 30px;
     height: 10px;
-    background: url(/arrow_pointer.png) center center no-repeat;
-    }
+    margin: 0 10px 0 0; }
+
+.header__arrow {
+  margin-left: 30px;
+  margin-top: 17px;
+  float: left; }
 
 .content__left {
   padding-left: 30px; }
 
 .content__right {
-  padding-right: 30px; 
+  padding-right: 30px;
   padding-bottom: 40px; }
 
 .col-6 {
@@ -68,12 +68,12 @@ main * {
   text-transform: uppercase;
   padding-top: 20px; }
 
-.rocket .rocket__start_date{
-  color: #a7a9ac; 
+.rocket .rocket__start_date {
+  color: #a7a9ac;
   letter-spacing: 9px; }
 
 section {
-  margin-top: 70px;
+  margin-top: 40px;
   margin-bottom: 20px; }
 
 .section__title {
@@ -87,8 +87,7 @@ section {
 .section__desc {
   font-size: 14px;
   padding-top: 20px;
-  overflow: overlay; 
-  letter-spacing: 1px; }
+  overflow: overlay; }
 
 .section__desc__list {
   padding-left: 20px;
@@ -124,7 +123,7 @@ section {
   text-align: center; }
 
 .links__lists {
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 100px;
   margin-bottom: 0px;
   display: -webkit-box;
@@ -142,13 +141,11 @@ section {
     border-radius: 30px;
     padding: 10px 40px;
     font-size: 14px;
-    letter-spacing: 2px;
+    letter-spacing: 9px;
     margin: 0 20px 0 0; }
-    .links__lists li:hover {
-        transform: translateY(-2px);
-        transition: all 0.4s; }
     .links__lists li:hover a {
       color: #ccac5b;
+      transfrom: translateY(-10px);
       -webkit-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s; }
@@ -186,11 +183,9 @@ section {
     margin: 0;
     padding: 0; }
     .footer__menu ul li {
-      padding-left: 20px;}
-    .footer__menu ul li:hover a {
-    color: #ffffff; }
+      padding-left: 20px; }
     .footer__menu ul a {
-      color: #9FA1A5;
+      color: #a7a9ac;
       text-decoration: none;
       text-transform: uppercase; }
 
@@ -200,5 +195,6 @@ section {
   margin-top: 30px;
   padding-right: 50px;
   text-transform: uppercase; }
+
 
 /*# sourceMappingURL=main.css.map*/
