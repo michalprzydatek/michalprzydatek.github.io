@@ -1,9 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+    font-family-font-size: 14px; }
+
+main * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans'; }
+
 .content__left {
-  padding-left: 20px; }
+  padding-left: 30px; }
 
 .content__right {
-  padding-right: 20px; 
+  padding-right: 30px; 
   padding-bottom: 40px; }
 
 .col-6 {
@@ -13,6 +24,39 @@
 .col-12 {
   width: 100%;
   float: left; }
+
+#header {
+  background: #0f1112;
+  height: 50px;
+  width: 100%; }
+
+.header__logo {
+  padding-top: 5px;
+  height: 35px;
+  margin: 0 auto;
+  text-align: center;
+  display: block; 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.header__btn-back {
+  color: #ccac5b;
+  float: left;
+  cursor: pointer;
+  padding-left: 5px;
+  margin: 12px 0 0 20px;
+  text-transform: uppercase; 
+  letter-spacing: 9px; }
+  .header__btn-back::before {
+    content: ' ';
+    display: block;
+    float: left;
+    margin: 5px 5px 0 10px;    
+    width: 10px;
+    height: 10px;
+    background: url(/arrow_pointer.png) center center no-repeat;
+    }
 
 .rocket .rocket__name {
   font-size: 36px;
@@ -113,36 +157,6 @@ section {
 .links__list--no-list-style {
   list-style: none; }
 
-#header {
-  background: #0f1112;
-  height: 50px;
-  width: 100%; }
-
-.header__logo {
-  padding-top: 5px;
-  height: 35px;
-  margin: 0 auto;
-  text-align: center;
-  display: block; }
-
-.header__btn-back {
-  color: #ccac5b;
-  float: left;
-  cursor: pointer;
-  padding-left: 5px;
-  margin-top: 12px;
-  text-transform: uppercase; 
-  letter-spacing: 9px; }
-  .header__btn-back::before {
-    content: ' ';
-    display: block;
-    float: left;
-    margin: 5px 5px 0 10px;    
-    width: 10px;
-    height: 10px;
-    background: url(/arrow_pointer.png) center center no-repeat;
-    }
-
 #footer {
   height: 80px;
   background: #0f1112;
@@ -183,16 +197,5 @@ section {
   margin-top: 30px;
   padding-right: 50px;
   text-transform: uppercase; }
-
-body {
-  margin: 0;
-  font-family: "Open Sans";
-    font-family-font-size: 14px; }
-
-main * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Open Sans'; }
-
 
 /*# sourceMappingURL=main.css.map*/
