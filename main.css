@@ -119,16 +119,18 @@ section {
   float: left;
   cursor: pointer;
   padding-top: 10px;
+  padding-left: 5px;
+  margin-top: 12px;
   text-transform: uppercase; }
   .header__btn-back::before {
     content: ' ';
-    background: url(/arrow_pointer.png) top left;
-    height: 10px;
-    width: 10px;
     display: block;
     float: left;
-    padding-right: 5px;
-    margin-left: 10px; }
+    margin: 5px 5px 0 10px;    
+    width: 10px;
+    height: 10px;
+    background: url(/arrow_pointer.png) center center no-repeat;
+    }
 
 #footer {
   color: #ffffff;
