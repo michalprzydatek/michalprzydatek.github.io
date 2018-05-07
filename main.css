@@ -40,7 +40,8 @@ section {
 .section__desc {
   font-size: 14px;
   padding-top: 20px;
-  overflow: overlay; }
+  overflow: overlay; 
+  letter-spacing: 1px; }
 
 .section__desc__list {
   padding-left: 20px;
@@ -143,19 +144,17 @@ section {
     }
 
 #footer {
-  color: #ffffff;
   height: 80px;
   background: #0f1112;
   font-family: 'Open-sans';
   font-size: 14px; }
 
 .footer__menu {
-  color: #ffffff;
   float: left;
   margin-top: 30px;
   margin-left: 50px; }
   .footer__menu span {
-    color: #a7a9ac;
+    color: #666666;
     padding-left: 10px;
     text-transform: uppercase; }
   .footer__menu ul {
@@ -177,7 +176,7 @@ section {
       text-transform: uppercase; }
 
 .company {
-  color: #a7a9ac;
+  color: #666666;
   float: right;
   margin-top: 30px;
   padding-right: 50px;
