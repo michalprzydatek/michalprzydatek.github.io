@@ -3,7 +3,8 @@
   padding-left: 20px; }
 
 .content__right {
-  padding-right: 20px; }
+  padding-right: 20px; 
+  padding-bottom: 40px;}
 
 .col-6 {
   width: 50%;
@@ -58,7 +59,7 @@ section {
   clear: both; }
 
 .links__title {
-  padding-top: 450px;
+  padding-top: 600px;
   letter-spacing: 4px;
   text-transform: uppercase;
   font-size: 36px;
@@ -68,7 +69,7 @@ section {
   text-align: center; }
 
 .links__lists {
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 100px;
   margin-bottom: 0px;
   display: -webkit-box;
@@ -120,7 +121,6 @@ section {
   color: #ffffff;
   float: left;
   cursor: pointer;
-  padding-top: 10px;
   padding-left: 5px;
   margin-top: 12px;
   text-transform: uppercase; }
