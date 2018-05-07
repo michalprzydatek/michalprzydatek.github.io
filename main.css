@@ -88,8 +88,8 @@ section {
     font-size: 14px;
     letter-spacing: 9px;
     margin: 0 20px 0 0; }
-    .links__lists li:hover {
-      color: red;
+    .links__lists li:hover a {
+      color: #ccac5b;
       transfrom: translateY(-10px);
       -webkit-transition: all 1s;
       -o-transition: all 1s;
