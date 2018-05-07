@@ -150,12 +150,14 @@ section {
     font-size: 14px;
     letter-spacing: 9px;
     margin: 0 20px 0 0; }
-    .links__lists li:hover a {
-      color: #ccac5b;
-      transfrom: translateY(-10px);
+    .links__lists li:hover {
+      -webkit-transform: translateY(-2px);
+              transform: translateY(-2px);
       -webkit-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s; }
+    .links__lists li:hover a {
+      color: #ccac5b; }
     .links__lists li a {
       text-transform: uppercase;
       color: #ffffff;
