@@ -170,6 +170,8 @@ section {
     padding: 0; }
     .footer__menu ul li {
       padding-left: 20px;}
+    .footer__menu ul li:hover a {
+    color: #ffffff; }
     .footer__menu ul a {
       color: #9FA1A5;
       text-decoration: none;
