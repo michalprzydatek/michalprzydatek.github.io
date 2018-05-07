@@ -30,7 +30,7 @@ main * {
   float: left;
   cursor: pointer;
   text-transform: uppercase;
-  margin: 12px 0 0 0;
+  margin: 14px 0 0 0;
   letter-spacing: 9px; }
   .header__btn-back::before {
     content: ' ';
@@ -38,12 +38,18 @@ main * {
     display: block;
     border-bottom: 1px solid #ccac5b;
     width: 30px;
-    height: 10px;
+    height: 9px;
     margin: 0 10px 0 0; }
+  .header__btn-back:hover {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s; }
 
 .header__arrow {
   margin-left: 30px;
-  margin-top: 17px;
+  margin-top: 18px;
   float: left; }
 
 .content__left {
@@ -87,7 +93,8 @@ section {
 .section__desc {
   font-size: 14px;
   padding-top: 20px;
-  overflow: overlay; }
+  overflow: overlay;
+  letter-spacing: 1px; }
 
 .section__desc__list {
   padding-left: 20px;
@@ -184,6 +191,8 @@ section {
     padding: 0; }
     .footer__menu ul li {
       padding-left: 20px; }
+      .footer__menu ul li:hover a {
+        color: #ffffff; }
     .footer__menu ul a {
       color: #a7a9ac;
       text-decoration: none;
