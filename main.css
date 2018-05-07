@@ -88,12 +88,14 @@ section {
     font-size: 14px;
     letter-spacing: 9px;
     margin: 0 20px 0 0; }
+    .links__lists li:hover {
+        transform: translateY(-2px);
+        transition: all 0.4s; }
     .links__lists li:hover a {
       color: #ccac5b;
-      transfrom: translateY(-10px);
-      -webkit-transition: all 1s;
-      -o-transition: all 1s;
-      transition: all 1s; }
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
     .links__lists li a {
       text-transform: uppercase;
       color: #ffffff;
