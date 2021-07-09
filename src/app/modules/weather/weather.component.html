@@ -1,0 +1,38 @@
+<p *ngIf="!cityData">loading</p>
+<div *ngIf="cityData">
+  <h2> Pogoda w mieście {{cityData.name}}</h2>
+  <p>Liczba mieszkańców: {{cityData.population}}</p>
+  <p>Wschód słońca: {{cityData.sunset | date:'HH:mm'}}</p>
+  <p>Zachód słońca: {{cityData.sunrise | date:'HH:mm'}}</p>
+</div>
+
+
+<div class="weadherContainer" *ngIf="weatherData">
+  <ul>
+  <li *ngFor="let day of weatherData" [ngClass]="{'newDay': getHour(day.dt) < 1}">
+    {{getHour(day.dt)}}
+    <div class="col">
+      <div class="image">
+        <img src='{{"http://openweathermap.org/img/wn/"+ day.weather[0].icon +"@2x.png"}}'/>
+      </div>
+      <div class="paramName date">{{ day.dt_txt | date:'dd-MM'}}</div>
+      <div class="paramValue">{{ day.dt_txt | date:'HH:mm'}} {{day.dt_text}}</div>
+      <div class="paramName">Temperatura</div>
+      <div class="paramValue">{{ round(day.main.temp || '')}} C</div>
+      <div class="paramName">Temperatura odczuwalna:</div>
+      <div class="paramValue">{{ round(day.main.feels_like) || ''}} C</div>
+      <div class="paramName">Ciśnienie</div>
+      <div class="paramValue"> {{ day.main.pressure || ''}} hPa</div>
+      <div class="paramName">Zachmurzenie</div>
+      <div class="paramValue">{{ day.clouds?.all || ''}} %</div>
+      <div class="paramName">Wilgotność</div>
+      <div class="paramValue"> {{ day.main.humidity || ''}} %</div>
+      <div class="paramName">Wiatr</div>
+      <div class="paramValue"> {{ day.wind.speed || ''}} km/h {{ getWindDirection(day.wind.deg)}} </div>
+      <div class="paramName" *ngIf="day.rain">Opady</div>
+      <div class="paramValue" *ngIf="day.rain"> {{ day.rain && day.rain['3h'] || ''}} mm</div>
+    </div>
+  </li>
+</ul>
+  <br/>
+</div>
